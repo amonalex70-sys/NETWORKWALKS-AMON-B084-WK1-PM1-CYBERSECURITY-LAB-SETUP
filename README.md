@@ -123,7 +123,7 @@ A dedicated NAT Network was configured in Oracle VirtualBox to provide network c
 
 The NAT Network provides internet access to connected virtual machines and allows communication between them within the configured virtual network.
 
----
+
 
 ## Step 3: Import Kali Linux into VirtualBox
 
