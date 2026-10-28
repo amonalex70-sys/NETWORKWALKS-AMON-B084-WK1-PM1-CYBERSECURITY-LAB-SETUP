@@ -75,7 +75,21 @@ It supports hands-on practice in the following areas:
 | 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
 
 ## ⚙️ Cybersecurity Lab Setup Steps
-## Step 1: Install VirtualBox on Kali Linux
+
+## Step 1: Install 7-Zip on Kali Linux
+
+The `p7zip-full` package was installed using the APT package manager to enable extraction of the downloaded Kali Linux virtual-machine archive in `.7z` format.
+
+**Tool:** 7-Zip (`p7zip-full`)
+
+**Installation command:**
+```bash
+sudo apt update
+sudo apt install p7zip-full -y
+```
+
+---
+## Step 2: Install VirtualBox on Kali Linux
 
 VirtualBox was installed on the Kali Linux host system using the APT package manager and the official Kali Linux repositories.
 
@@ -94,11 +108,29 @@ virtualbox --help
 
 **Official documentation:** [Installing VirtualBox on Kali Linux](https://www.kali.org/docs/virtualization/install-virtualbox-host/)
 
-## Step 2: Import Kali Linux into VirtualBox
+## Step 3: Create and Configure the NAT Network
+
+A dedicated NAT Network was configured in Oracle VirtualBox to provide network connectivity for the cybersecurity lab.
+
+**Configuration:**
+
+| Component | Setting |
+|---|---|
+| Network Name | `NatNetwork` |
+| IPv4 Prefix | `10.0.0.0/24` |
+| DHCP | Enabled |
+| IPv6 | Disabled |
+
+The NAT Network provides internet access to connected virtual machines and allows communication between them within the configured virtual network.
+
+---
+
+## Step 3: Import Kali Linux into VirtualBox
 
 The prebuilt Kali Linux virtual-machine image was downloaded from the official Kali Linux website, extracted, and imported into Oracle VirtualBox for the cybersecurity lab.
 
----
+
+
 
 
 
