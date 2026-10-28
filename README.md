@@ -57,14 +57,14 @@ It supports hands-on practice in the following areas:
 **⚠️ Security Notice:** All testing must be conducted on systems you own or have explicit permission to assess. Never target unauthorized systems or networks.
 
 
-## ⚙️ Lab Configuration
+## ⚙️ Cybersecurity Lab System Specifications
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
 | 🖥️ Host OS         | Kali-Linux 2026.3       |
 | 🧠 Host RAM        | 8 GB               |
 | ⚡ Processor       | Intel Core i5   |
-| 🧰 Virtualizaton Platform      | Oracle Virtualbox  |
+| 🧰 Virtualizaton Platform      | Oracle Virtualbox v7.2.20  |
 | 🐉 Security OS     | Kali Linux 2026.2  |
 | 🧠 Kali RAM        | 2048 MB (2GB)            |
 | 🌐 Virtual Network | NAT Network        |
@@ -75,7 +75,6 @@ It supports hands-on practice in the following areas:
 | 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
 
 ## ⚙️ Cybersecurity Lab Setup Steps
-
 ## Step 1: Install VirtualBox on Kali Linux
 
 VirtualBox was installed on the Kali Linux host system using the APT package manager and the official Kali Linux repositories.
@@ -94,6 +93,12 @@ virtualbox --help
 ```
 
 **Official documentation:** [Installing VirtualBox on Kali Linux](https://www.kali.org/docs/virtualization/install-virtualbox-host/)
+
+## Step 2: Import Kali Linux into VirtualBox
+
+The prebuilt Kali Linux virtual-machine image was downloaded from the official Kali Linux website, extracted, and imported into Oracle VirtualBox for the cybersecurity lab.
+
+---
 
 
 
