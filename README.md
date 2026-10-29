@@ -123,21 +123,18 @@ A dedicated NAT Network was configured in Oracle VirtualBox to provide network c
 
 The NAT Network provides internet access to connected virtual machines and allows communication between them within the configured virtual network.
 
+## Step 4: Import Kali Linux into VirtualBox
 
-## Step 4: Extract and Open the Kali Linux VM
+The prebuilt Kali Linux virtual-machine image was downloaded from the official Kali Linux website and extracted using 7-Zip. The extracted `.vbox` configuration file was opened in VirtualBox to load the virtual machine's predefined settings.
 
-Extract the prebuilt Kali Linux archive using 7-Zip, then open the `.vbox` configuration file to load the virtual machine's predefined virtualization settings in Oracle VirtualBox.
-
-**Extract command:**
-
-```bash
-7z x kali-linux-2026.2-virtualbox-amd64.7z
+**The VM network adapter configurations**
+```text
+RAM 2048 MB 
+Network Adapter: Adapter 1 
+Network Mode: NAT Network 
+Network Name: `NatNetwork` 
+Adapter Type: Intel PRO/1000 MT Desktop 
 ```
-
-**Note:** The `.vbox` file contains the virtual machine's configuration settings, including its virtual hardware and system parameters.
-
-
-
 
 
 
