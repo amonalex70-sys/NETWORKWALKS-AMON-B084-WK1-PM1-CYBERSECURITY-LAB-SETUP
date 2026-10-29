@@ -168,7 +168,7 @@ A snapshot was created in Oracle VirtualBox to preserve the initial Kali Linux s
 | ----------------------------- | ------------------------------- | ------------------------------- |
 | 🌐 Check IP address           | `ip addr`                          | Correct Kali IP displayed       |
 | 📡 Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
-| 🌍 Test Internet connectivity | `ping 4 8.8.8.8`                  | Successful replies              |
+| 🌍 Test Internet connectivity | `ping 8.8.8.8`                  | Successful replies              |
 | 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
 | 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
 | 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
