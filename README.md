@@ -65,7 +65,7 @@ It supports hands-on practice in the following areas:
 | 🧠 Host RAM        | 8 GB               |
 | ⚡ Processor       | Intel Core i5   |
 | 🧰 Virtualizaton Platform      | Oracle Virtualbox v7.2.20  |
-| 🐉 Security OS     | Kali Linux 2026.2  |
+| 🐉 Security OS     | Kali Linux 2026.3  |
 | 🧠 Kali RAM        | 2048 MB (2GB)            |
 | 🌐 Virtual Network | NAT Network        |
 | 📡 Network Address | 10.0.0.0/24        |
@@ -124,10 +124,17 @@ A dedicated NAT Network was configured in Oracle VirtualBox to provide network c
 The NAT Network provides internet access to connected virtual machines and allows communication between them within the configured virtual network.
 
 
+## Step 4: Extract and Open the Kali Linux VM
 
-## Step 3: Import Kali Linux into VirtualBox
+Extract the prebuilt Kali Linux archive using 7-Zip, then open the `.vbox` configuration file to load the virtual machine's predefined virtualization settings in Oracle VirtualBox.
 
-The prebuilt Kali Linux virtual-machine image was downloaded from the official Kali Linux website, extracted, and imported into Oracle VirtualBox for the cybersecurity lab.
+**Extract command:**
+
+```bash
+7z x kali-linux-2026.2-virtualbox-amd64.7z
+```
+
+**Note:** The `.vbox` file contains the virtual machine's configuration settings, including its virtual hardware and system parameters.
 
 
 
