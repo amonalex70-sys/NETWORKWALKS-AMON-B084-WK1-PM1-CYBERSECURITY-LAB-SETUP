@@ -136,6 +136,101 @@ Network Name: `NatNetwork`
 Adapter Type: Intel PRO/1000 MT Desktop 
 ```
 
+## Step 5: Configure the Kali Linux Network
 
+The Kali Linux network settings were configured to use a consistent IPv4 address within the lab's NAT Network.
+
+**Network Configuration**
+
+```text
+IP Address:    10.0.0.2/24
+Subnet Mask:   255.255.255.0
+Default Gateway: 10.0.0.1
+DNS Server:    8.8.8.8
+```
+
+Using a consistent IP address simplifies network identification, troubleshooting, and documentation for future cybersecurity lab exercises.
+
+<img width="1271" height="756" alt="Network configuration " src="https://github.com/user-attachments/assets/190b4936-0c2c-48d8-988b-b2e45f3474e9"/>
+
+## Step 6: Create a Clean VM Snapshot
+
+A snapshot was created in Oracle VirtualBox to preserve the initial Kali Linux setup and provide a recovery point for future cybersecurity experiments.
+
+**Snapshot Name:**
+
+```text
+`Clean kali - Network setup`
+```
+
+## 🔎 Step 7: Lab Verification
+
+| ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
+| ----------------------------- | ------------------------------- | ------------------------------- |
+| 🌐 Check IP address           | `ip addr`                          | Correct Kali IP displayed       |
+| 📡 Test gateway               | `ping -c 4 10.0.0.1`                 | Successful replies              |
+| 🌍 Test Internet connectivity | `ping -c 4 8.8.8.8`                  | Successful replies              |
+| 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
+| 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
+| 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
+
+Verification result test:
+
+<img width="690" height="614" alt="Verification test" src="https://github.com/user-attachments/assets/c4f0991f-17a9-41c5-b1a8-f5c9422637c1" />
+
+
+# 🐞 Problems Encountered & Solutions
+
+Documenting troubleshooting steps helps improve the lab setup and supports future reference.
+
+## Problem 1: Internet Connectivity After Static IP Configuration
+
+After configuring a static IPv4 address, internet connectivity may fail due to network configuration issues.
+
+**Solution:** The following NetworkManager setting was applied as a workaround during the lab:
+
+```bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+```
+
+The network connection was restarted, and internet connectivity was tested again.
+
+> **Note:** Connection names vary between systems. Identify the correct connection name before executing the command.
+
+# 💡 What I Learned
+
+Through this project, I learned how to create and configure a virtual environment for cybersecurity practice using Kali Linux and Oracle VirtualBox.
+
+The most important concepts I learned include:
+
+### 1. Virtualization and VM Configuration
+
+I learned how to install VirtualBox, extract a prebuilt Kali Linux virtual machine, open its `.vbox` configuration file, and configure essential resources such as RAM and network adapters.
+
+### 2. NAT vs NAT Network
+
+I learned the difference between standard NAT and NAT Network. A NAT Network allows multiple connected virtual machines to communicate with one another while providing network address translation for external connectivity.
+
+### 3. Virtual Machine Networking
+
+I learned how to configure VirtualBox network adapters, select the appropriate network mode, and understand settings such as promiscuous mode and cable connection.
+
+### 4. Static IP Configuration
+
+I learned how to configure and verify IPv4 addresses, subnet masks, default gateways, and DNS settings in Kali Linux. I also gained experience troubleshooting internet connectivity issues related to network configuration.
+
+### 5. VM Snapshots
+
+I learned how to create a clean snapshot in VirtualBox to preserve a working Kali Linux configuration. This provides a recovery point before performing risky or experimental cybersecurity activities.
+
+### 6. Troubleshooting and Documentation
+
+I learned how to investigate network connectivity problems, apply configuration changes, test connectivity, and document commands, screenshots, problems, and solutions in a structured GitHub repository.
+
+### 7. Cybersecurity Lab Preparation
+
+I established a foundation for future hands-on exercises involving network reconnaissance, packet analysis, vulnerability assessment, and authorized penetration testing within a controlled virtual environment.
+
+---
 
 
