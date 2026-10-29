@@ -251,14 +251,10 @@ This laboratory is intended strictly for educational purposes. All cybersecurity
 **Amon Alex**  
 Cybersecurity Student | Electronics, Telecommunications & Cybersecurity
 
-**GitHub:** [Your GitHub Profile](https://github.com/)
+**LinkedIn:** [Amon Alex](https://www.linkedin.com/in/amon-lowasa-60877a42a/)
 
----
 
 ## 📌 Project Information
 
-**Program:** Cybersecurity at NetworkWalks  
-**Week:** 01  
-**Project:** Cybersecurity Lab Setup  
-**Repository:** `NETWORKWALKS-AMON-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP`
+**Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup | **Repository:** GitHub
 
