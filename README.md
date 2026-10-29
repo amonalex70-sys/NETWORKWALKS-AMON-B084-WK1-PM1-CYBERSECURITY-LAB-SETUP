@@ -129,7 +129,6 @@ The prebuilt Kali Linux virtual-machine image was downloaded from the official K
 
 **The VM network adapter configurations**
 ```text
-RAM 2048 MB 
 Network Adapter: Adapter 1 
 Network Mode: NAT Network 
 Network Name: `NatNetwork` 
@@ -168,8 +167,8 @@ A snapshot was created in Oracle VirtualBox to preserve the initial Kali Linux s
 | ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
 | ----------------------------- | ------------------------------- | ------------------------------- |
 | 🌐 Check IP address           | `ip addr`                          | Correct Kali IP displayed       |
-| 📡 Test gateway               | `ping -c 4 10.0.0.1`                 | Successful replies              |
-| 🌍 Test Internet connectivity | `ping -c 4 8.8.8.8`                  | Successful replies              |
+| 📡 Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
+| 🌍 Test Internet connectivity | `ping 4 8.8.8.8`                  | Successful replies              |
 | 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
 | 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
 | 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
@@ -233,4 +232,33 @@ I established a foundation for future hands-on exercises involving network recon
 
 ---
 
+# 🔐 Security & Ethical Use
+
+This laboratory is intended strictly for educational purposes. All cybersecurity activities must be conducted in a controlled environment and only on systems you own or have explicit authorization to test.
+
+---
+
+# 🔗 Tools & Resources
+
+- **7-Zip:** https://www.7-zip.org/download.html
+- **VirtualBox:** https://www.virtualbox.org/wiki/Downloads
+- **Kali Linux:** https://www.kali.org/get-kali/
+
+---
+
+# 👤 Author
+
+**Amon Alex**  
+Cybersecurity Student | Electronics, Telecommunications & Cybersecurity
+
+**GitHub:** [Your GitHub Profile](https://github.com/)
+
+---
+
+## 📌 Project Information
+
+**Program:** Cybersecurity at NetworkWalks  
+**Week:** 01  
+**Project:** Cybersecurity Lab Setup  
+**Repository:** `NETWORKWALKS-AMON-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP`
 
