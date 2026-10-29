@@ -249,7 +249,7 @@ This laboratory is intended strictly for educational purposes. All cybersecurity
 # 👤 Author
 
 **Amon Alex**  
-Cybersecurity Student | Electronics, Telecommunications & Cybersecurity
+Cybersecurity Student B084 | Electronics, Telecommunications & Cybersecurity
 
 **LinkedIn:** [Amon Alex](https://www.linkedin.com/in/amon-lowasa-60877a42a/)
 
